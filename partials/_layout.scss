@@ -1,7 +1,10 @@
 .container{
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 8px;
 }
+
+// BG HOME
 
 .bg-home{
     position: relative;
@@ -28,4 +31,110 @@
 .hero{
     color: $white-normal;
     min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1{
+        font-size: 24px;
+    }
+}
+
+// ---------------------
+
+// ABOUT ---------------
+.about{
+    color: $white-normal;
+    overflow: hidden;
+    background-color: $primary-normal;
+}
+
+.about-content{
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 570px;
+    }
+}
+
+.about-content div{
+    flex: 1;
+}
+
+.about-descriltion{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        flex-direction: column;
+    }
 }
