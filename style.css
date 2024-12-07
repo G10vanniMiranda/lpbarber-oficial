@@ -239,6 +239,15 @@ i {
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
 }
+.haircut img {
+  width: 100%;
+  max-width: 354px;
+}
+
+.haircut img:hover {
+  transform: scaleX(1.2);
+  z-index: 1;
+}
 
 body {
   font-family: "Sora", sans-serif;

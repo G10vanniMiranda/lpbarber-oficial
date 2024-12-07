@@ -178,7 +178,7 @@
 }
 
 .haircut{
-    flex: 1;
+    flex: 1;    
     display: flex;
     flex-direction: column;
     background-color: $white-normal;
@@ -186,4 +186,14 @@
     box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
 
     overflow: hidden;
+
+    img{
+        width: 100%;
+        max-width: 354px;
+    }
+}
+
+.haircut img:hover{
+    transform: scaleX(1.2);
+    z-index: 1;
 }
